@@ -1,0 +1,69 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  /* background-color:hsl(334deg 13% 89%); */
+  background-image: linear-gradient(
+    45deg,
+    hsl(337deg 15% 83%) 0%,
+    hsl(315deg 13% 85%) 11%,
+    hsl(280deg 13% 86%) 22%,
+    hsl(249deg 18% 88%) 33%,
+    hsl(226deg 26% 90%) 44%,
+    hsl(212deg 36% 91%) 56%,
+    hsl(203deg 44% 92%) 67%,
+    hsl(194deg 49% 93%) 78%,
+    hsl(185deg 51% 94%) 89%,
+    hsl(172deg 60% 95%) 100%
+  );
+  --shadow-color: 330deg 3% 9%;
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
+main {
+  height: 100%;
+}
+
+#content {
+  position: absolute;
+  top: 24px;
+  left: 16px;
+  width: 35ch;
+  height: min-content;
+  max-height: 100%;
+  border-radius: 4px;
+  padding: 0.5em 2em;
+  background-color: hsl(48, 17%, 97%);
+  backdrop-filter: blur(5px);
+  overflow-y: auto;
+  box-shadow: 0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.26),
+    0.8px 1.6px 2px -0.8px hsl(var(--shadow-color) / 0.26),
+    2.1px 4.1px 5.2px -1.7px hsl(var(--shadow-color) / 0.26),
+    5px 10px 12.6px -2.5px hsl(var(--shadow-color) / 0.26);
+}
+
+.circle circle {
+  transition: stroke-width 250ms ease-out, fill 250ms ease-out;
+}
+
+.circle text {
+  transition: stroke 200ms ease-out;
+}
+
+circle:focus {
+  outline: none;
+  /* stroke: hotpink; */
+}
+
+.force-node {
+  transition: stroke 150ms ease-out, fill 150ms ease-out;
+}

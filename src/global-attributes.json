@@ -1,0 +1,269 @@
+[
+    {
+        "name": "accesskey",
+        "type": "global",
+        "description": "Provides a hint for generating a keyboard shortcut for the current element. This attribute consists of a space-separated list of characters. The browser should use the first one that exists on the computer keyboard layout."
+    },
+    {
+        "name": "autocapitalize",
+        "type": "global",
+        "description": "Controls whether and how text input is automatically capitalized as it is entered/edited by the user.",
+        "values": [
+            {
+                "value": "off or none",
+                "description": "No autocapitalization is applied (all letters default to lowercase)"
+            },
+            {
+                "value": "on or sentences",
+                "description": "The first letter of each sentence defaults to a capital letter; all other letters default to lowercase"
+            },
+            {
+                "value": "words",
+                "description": "The first letter of each word defaults to a capital letter; all other letters default to lowercase"
+            },
+            {
+                "value": "characters",
+                "description": "All letters should default to uppercase"
+            }
+        ]
+    },
+    {
+        "name": "autofocus",
+        "description": "Indicates that an element is to be focused on page load, or as soon as the <dialog> it is part of is displayed. This attribute is false by default.",
+        "type": "global boolean"
+    },
+    {
+        "name": "class",
+        "type": "global",
+        "description": "A space-separated list of the classes of the element. Classes allows CSS and JavaScript to select and access specific elements via the class selectors or functions like the method Document.getElementsByClassName()."
+    },
+    {
+        "name": "contenteditable",
+        "type": "global enumarated",
+        "description": "An enumerated attribute indicating if the element should be editable by the user. If so, the browser modifies its widget to allow editing.",
+        "values": [
+            {
+                "value": "true or the empty string",
+                "description": "Indicates that the element must be editable"
+            },
+            {
+                "value": "false",
+                "description": "Indicates that the element must not be editable."
+            }
+        ]
+    },
+    {
+        "name": "data-*",
+        "type": "global",
+        "description": "Forms a class of attributes, called custom data attributes, that allow proprietary information to be exchanged between the HTML and its DOM representation that may be used by scripts. All such custom data are available via the HTMLElement interface of the element the attribute is set on. The HTMLElement.dataset property gives access to them.",
+        "links": [
+            {
+                "url": "https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes",
+                "title": "MDN: Using data attributes"
+            }
+        ]
+    },
+    {
+        "name": "dir",
+        "description": "An enumerated attribute indicating the directionality of the element's text. It can have the following values:",
+        "type": "global enumarated",
+        "values": [
+            {
+                "value": "ltr",
+                "description": "Means left to right and is to be used for languages that are written from the left to the right (like English)"
+            },
+            {
+                "value": "rtl",
+                "description": "Means right to left and is to be used for languages that are written from the right to the left (like Arabic)"
+            },
+            {
+                "value": "auto",
+                "description": "Lets the user agent decide. It uses a basic algorithm as it parses the characters inside the element until it finds a character with a strong directionality, then it applies that directionality to the whole element."
+            }
+        ]
+    },
+    {
+        "name": "draggable",
+        "description": "Indicates whether the element can be dragged, using the Drag and Drop API.",
+        "type": "global enumarated",
+        "values": [
+            {
+                "value": "true",
+                "description": "indicates that the element may be dragged"
+            },
+            {
+                "value": "false",
+                "description": "indicates that the element may not be dragged."
+            }
+        ],
+        "links": [
+            {
+                "title": "MDN: HTML Drag and Drop API",
+                "url": "https: //developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API"
+            }
+        ]
+    },
+    {
+        "name": "enterkeyhint",
+        "type": "global enumarated",
+        "description": "Hints what action label (or icon) to present for the enter key on virtual keyboards.",
+        "values": [
+            {
+                "value": "enter",
+                "description": "Typically inserting a new line."
+            },
+            {
+                "value": "done",
+                "description": "Typically meaning there is nothing more to input and the input method editor (IME) will be closed."
+            },
+            {
+                "value": "go",
+                "description": "Typically meaning to take the user to the target of the text they typed."
+            },
+            {
+                "value": "next",
+                "description": "Typically taking the user to the next field that will accept text."
+            },
+            {
+                "value": "previous",
+                "description": "Typically taking the user to the previous field that will accept text"
+            },
+            {
+                "value": "search",
+                "description": "Typically taking the user to the results of searching for the text they have typed"
+            },
+            {
+                "value": "send",
+                "description": "Typically delivering the text to its target"
+            }
+        ]
+    },
+    {
+        "name": "exportparts",
+        "type": "global",
+        "description": "Used to transitively export shadow parts from a nested shadow tree into a containing light tree."
+    },
+    {
+        "name": "hidden",
+        "type": "global boolean",
+        "description": "Indicates that the element is not yet, or is no longer, relevant. For example, it can be used to hide elements of the page that can't be used until the login process has been completed. The browser won't render such elements. This attribute must not be used to hide content that could legitimately be shown."
+    },
+    {
+        "name": "id",
+        "type": "global",
+        "description": "Defines a unique identifier (ID) which must be unique in the whole document. Its purpose is to identify the element when linking (using a fragment identifier), scripting, or styling (with CSS)."
+    },
+    {
+        "name": "inputmode",
+        "type": "global",
+        "description": "Provides a hint to browsers as to the type of virtual keyboard configuration to use when editing this element or its contents. Used primarily on <input> elements, but is usable on any element while in contenteditable mode."
+    },
+    {
+        "name": "is",
+        "type": "global",
+        "description": "Allows you to specify that a standard HTML element should behave like a registered custom built-in element."
+    },
+    {
+        "name": "itemid",
+        "type": "global",
+        "description": "The unique, global identifier of an item."
+    },
+    {
+        "name": "itemprop",
+        "type": "global",
+        "description": "Used to add properties to an item. Every HTML element may have an itemprop attribute specified, where an itemprop consists of a name and value pair."
+    },
+    {
+        "name": "itemref",
+        "type": "global",
+        "description": "Properties that are not descendants of an element with the itemscope attribute can be associated with the item using an itemref. It provides a list of element ids (not itemids) with additional properties elsewhere in the document."
+    },
+    {
+        "name": "itemscope",
+        "type": "global",
+        "description": "itemscope (usually) works along with itemtype to specify that the HTML contained in a block is about a particular item. itemscope creates the Item and defines the scope of the itemtype associated with it. itemtype is a valid URL of a vocabulary (such as schema.org) that describes the item and its properties context."
+    },
+    {
+        "name": "itemtype",
+        "type": "global",
+        "description": "Specifies the URL of the vocabulary that will be used to define itemprops (item properties) in the data structure. itemscope is used to set the scope of where in the data structure the vocabulary set by itemtype will be active."
+    },
+    {
+        "name": "lang",
+        "type": "global",
+        "description": "Helps define the language of an element: the language that non-editable elements are in, or the language that editable elements should be written in by the user. The attribute contains one “language tag” (made of hyphen-separated “language subtags”) in the format defined in RFC 5646: Tags for Identifying Languages (also known as BCP 47). xml:lang has priority over it."
+    },
+    {
+        "name": "nonce",
+        "type": "global",
+        "description": "A cryptographic nonce ('number used once') which can be used by Content Security Policy to determine whether or not a given fetch will be allowed to proceed."
+    },
+    {
+        "name": "part",
+        "type": "global",
+        "description": "A space-separated list of the part names of the element. Part names allows CSS to select and style specific elements in a shadow tree via the ::part pseudo-element."
+    },
+    {
+        "name": "slot",
+        "type": "global",
+        "description": "Assigns a slot in a shadow DOM shadow tree to an element: An element with a slot attribute is assigned to the slot created by the <slot> element whose name attribute's value matches that slot attribute's value."
+    },
+    {
+        "name": "spellcheck",
+        "type": "global enumarated",
+        "description": "Defines whether the element may be checked for spelling errors.",
+        "values": [
+            {
+                "value": "true",
+                "description": ""
+            },
+            {
+                "value": "false",
+                "description": "Indicates that the element should not be checked for spelling errors."
+            },
+            {
+                "value": "style",
+                "description": "Contains CSS styling declarations to be applied to the element. Note that it is recommended for styles to be defined in a separate file or files. This attribute and the <style> element have mainly the purpose of allowing for quick styling, for example for testing purposes."
+            }
+        ]
+    },
+    {
+        "name": "tabindex",
+        "description": "An integer attribute indicating if the element can take input focus (is focusable), if it should participate to sequential keyboard navigation, and if so, at what position.",
+        "type": "global integer",
+        "values": [
+            {
+                "value": "a negative value",
+                "description": "means that the element should be focusable, but should not be reachable via sequential keyboard navigation"
+            },
+            {
+                "value": "0",
+                "description": "means that the element should be focusable and reachable via sequential keyboard navigation, but its relative order is defined by the platform convention"
+            },
+            {
+                "value": "a positive value",
+                "description": "means that the element should be focusable and reachable via sequential keyboard navigation; the order in which the elements are focused is the increasing value of the tabindex. If several elements share the same tabindex, their relative order follows their relative positions in the document."
+            }
+        ]
+    },
+    {
+        "name": "title",
+        "type": "global",
+        "description": "Contains a text representing advisory information related to the element it belongs to. Such information can typically, but not necessarily, be presented to the user as a tooltip."
+    },
+    {
+        "name": "translate",
+        "description": "Used to specify whether an element's attribute values and the values of its Text node children are to be translated when the page is localized, or whether to leave them unchanged.",
+        "type": "global enumerated",
+        "values": [
+            {
+                "value": "empty string and yes",
+                "description": "Indicates that the element will be translated."
+            },
+            {
+                "value": "no",
+                "description": "Indicates that the element will not be translated."
+            }
+        ]
+    }
+]
