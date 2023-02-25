@@ -1023,6 +1023,10 @@
                   "description": "Represents a specific period in time. It may include the datetime attribute to translate dates into machine-readable format, allowing for better search engine results or custom features such as reminders",
                   "links": [
                     {
+                      "title": "The time element in Safari and VoiceOver — jasha.eu",
+                      "url":"https://www.jasha.eu/blogposts/2019/05/voiceover-safari-time-element.html"
+                    },
+                    {
                       "title": "CSS-tricks.com: The `time` Element",
                       "url": "https://css-tricks.com/time-element/"
                     },
