@@ -1067,6 +1067,10 @@
                   "description": "Used to indicate the term being defined within the context of a definition phrase or sentence",
                   "links": [
                     {
+                      "url": "https://jen4web.substack.com/p/dfn",
+                      "title": "#30DaysofHTML Day 4: <dfn>"
+                    },
+                    {
                       "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dfn",
                       "title": "MDN: The Definition element"
                     },
